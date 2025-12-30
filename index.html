@@ -18,6 +18,9 @@
         <div class="container">
             <nav>
                 <div class="logo">AURA<span style="color:var(--accent-primary)">SCAN</span></div>
+                <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
                 <div class="nav-links">
                     <a href="#about">About</a>
                     <a href="#mobile-service">Mobile Service</a>
@@ -42,6 +45,11 @@
                     <div style="margin-top: 30px;">
                         <a href="#booking" class="btn btn-primary">Book Your Session</a>
                     </div>
+                    <div class="info-chips">
+                        <span class="chip"><i class="fa-solid fa-location-dot"></i>No travel fee within 20 km</span>
+                        <span class="chip"><i class="fa-solid fa-clock"></i>30–45 minute session window</span>
+                        <span class="chip"><i class="fa-solid fa-shield-halved"></i>Guided, calm & professional</span>
+                    </div>
                     <div
                         style="margin-top: 40px; display: flex; gap: 20px; color: var(--text-muted); font-size: 0.9rem;">
                         <span><i class="fa-solid fa-location-dot"></i> Gold Coast, QLD</span>
@@ -50,6 +58,38 @@
                 </div>
                 <div class="hero-image">
                     <img src="images/hero.png" alt="Aura Visualization">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="highlights">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow">Why people book with us</p>
+                <h2>Bring studio-grade insights to your own space</h2>
+                <p class="section-subtitle">A focused, on-site experience designed for reflection without leaving home
+                    or work.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="glass-panel highlight-card">
+                    <div class="icon-circle"><i class="fa-solid fa-house-circle-check"></i></div>
+                    <h3>Set up anywhere</h3>
+                    <p>Living room, studio, or quiet office—we tailor the setup to your environment with minimal
+                        disruption.</p>
+                </div>
+                <div class="glass-panel highlight-card">
+                    <div class="icon-circle"><i class="fa-solid fa-image"></i></div>
+                    <h3>Clear visual output</h3>
+                    <p>See colour fields, chakra activity, and energy flow on-screen with simple guidance on what you’re
+                        viewing.</p>
+                </div>
+                <div class="glass-panel highlight-card">
+                    <div class="icon-circle"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <h3>Calm, guided session</h3>
+                    <p>We keep the pace intentional—time for questions, explanation, and a grounded close to the
+                        experience.</p>
                 </div>
             </div>
         </div>
@@ -251,20 +291,85 @@
         </div>
     </section>
 
-    <section id="booking" style="text-align: center; padding: 100px 0;">
+    <section id="booking">
         <div class="container">
-            <div style="max-width: 700px; margin: 0 auto;">
-                <h2>Ready to See Your Energy?</h2>
-                <p style="margin-bottom: 40px;">Book your mobile Aura & Energy Scan on the Gold Coast today.</p>
+            <div class="section-header">
+                <p class="eyebrow">Book a mobile visit</p>
+                <h2>Ready to see your energy?</h2>
+                <p class="section-subtitle">Choose your ideal time and we’ll bring the full setup to you—no travel fee
+                    within 20 km of the Gold Coast.</p>
+            </div>
 
-                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                    <a href="#" class="btn btn-primary">Book a Session</a>
-                    <a href="#" class="btn btn-secondary">Schedule a Meeting</a>
+            <div class="booking-grid">
+                <div class="glass-panel booking-card">
+                    <div class="pill">By appointment only</div>
+                    <h3>Your next step</h3>
+                    <p>Tell us your preferred date and address. We confirm availability, arrive on time, and guide you
+                        through the scan.</p>
+                    <div class="cta-row">
+                        <a href="#" class="btn btn-primary">Book a Session</a>
+                        <a href="#" class="btn btn-secondary">Schedule a Meeting</a>
+                    </div>
+                    <div class="micro-copy">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Prefer to chat first? Reach out and we’ll answer any questions.</span>
+                    </div>
                 </div>
 
-                <div style="margin-top: 30px;">
-                    <a href="#" style="color: var(--accent-secondary); text-decoration: underline;">Contact Us – Gold
-                        Coast</a>
+                <div class="glass-panel booking-details">
+                    <h3>What to prepare</h3>
+                    <ul class="checklist">
+                        <li><i class="fa-solid fa-circle-check"></i>Quiet, comfortable space with a chair</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Access to power if available (we can provide
+                            alternatives)</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Allow 10 minutes for set up and close down</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Questions welcome—interpretation is guided and
+                            supportive</li>
+                    </ul>
+                    <div class="pill pill-outline"><i class="fa-solid fa-car-side"></i> No travel fee within 20 km of
+                        the Gold Coast</div>
+                    <p class="fine-print">Need us outside the 20 km radius? We can quote travel in advance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow">FAQ</p>
+                <h2>Details before you book</h2>
+                <p class="section-subtitle">If you have something specific in mind, let us know when you reach out—we
+                    tailor the visit.</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="glass-panel">
+                    <h3>Common questions</h3>
+                    <p>We keep communication simple: you get clarity on what to expect, when we arrive, and how the
+                        visuals will be shared.</p>
+                </div>
+                <div class="faq-items">
+                    <details class="faq-item">
+                        <summary>How does the mobile visit work?</summary>
+                        <p>We arrive with the scanning equipment, set up in your chosen space, and walk you through the
+                            process before capturing any visuals.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Do I need technical knowledge?</summary>
+                        <p>No. We explain what you are seeing, answer questions, and keep the experience grounded and
+                            easy to follow.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can you visit outside the Gold Coast?</summary>
+                        <p>We serve the wider region on request. Travel beyond 20 km may include a fee, confirmed before
+                            you book.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Is this a medical service?</summary>
+                        <p>No. Sessions are for personal insight only and do not diagnose, treat, or replace medical
+                            advice.</p>
+                    </details>
                 </div>
             </div>
         </div>
