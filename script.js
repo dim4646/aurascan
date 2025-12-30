@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Header Scroll Effect
     const header = document.querySelector('header');
+    const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.menu-toggle');
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -9,6 +11,21 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('scrolled');
         }
     });
+
+    // Mobile navigation toggle
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('open');
+            menuToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
 
     // Scroll Reveal Animation
     const observerOptions = {
@@ -26,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     // Elements to animate
-    const animatedElements = document.querySelectorAll('.hero-text, .hero-image, .text-content, .image-content, .glass-panel, .step-card, h2');
+    const animatedElements = document.querySelectorAll('.hero-text, .hero-image, .text-content, .image-content, .glass-panel, .step-card, h2, .faq-item, .highlight-card, .booking-card, .booking-details');
 
     animatedElements.forEach(el => {
         el.classList.add('fade-in-section');
