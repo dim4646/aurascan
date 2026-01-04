@@ -278,6 +278,31 @@ section {
     font-size: 1.5rem;
 }
 
+.camera-overview-panel {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.camera-intro,
+.camera-footnote {
+    color: var(--text-muted);
+}
+
+.camera-step-list {
+    margin: 15px 0 25px;
+    padding-left: 22px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.camera-step-list li {
+    margin-bottom: 14px;
+}
+
+.camera-step-list li strong {
+    color: var(--text-color);
+}
+
 .image-content img {
     width: 100%;
     border-radius: var(--card-radius);
